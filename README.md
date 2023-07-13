@@ -15,11 +15,6 @@
     
     - For the last application, that is the plant disease prediction application, the user can input an image of a diseased plant leaf, and the application will predict what disease it is and will also give a little background about the disease and suggestions to cure it.
 
-## DATA SOURCE 📊
-- [Crop recommendation dataset ](https://www.kaggle.com/atharvaingle/crop-recommendation-dataset) (custom built dataset)
-- [Fertilizer suggestion dataset](https://github.com/Gladiator07/Harvestify/blob/master/Data-processed/fertilizer.csv) (custom built dataset)
-- [Disease detection dataset](https://www.kaggle.com/vipoooool/new-plant-diseases-dataset)
-
 # Built with 🛠️
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
 <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
@@ -37,8 +32,7 @@
 
 ## How to use 💻
 - Crop Recommendation system ==> enter the corresponding nutrient values of your soil, state and city. Note that, the N-P-K (Nitrogen-Phosphorous-Pottasium) values to be entered should be the ratio between them. Refer [this website](https://www.gardeningknowhow.com/garden-how-to/soil-fertilizers/fertilizer-numbers-npk.htm) for more information.
-Note: When you enter the city name, make sure to enter mostly common city names. Remote cities/towns may not be available in the [Weather API](https://ope
-nweathermap.org/) from where humidity, temperature data is fetched.
+Note: When you enter the city name, make sure to enter mostly common city names. Remote cities/towns may not be available in the [Weather API](https://openweathermap.org/) from where humidity, temperature data is fetched.
 
 - Fertilizer suggestion system ==> Enter the nutrient contents of your soil and the crop you want to grow. The algorithm will tell which nutrient the soil has excess of or lacks. Accordingly, it will give suggestions for buying fertilizers.
 
@@ -67,17 +61,17 @@ Note that, for now it only supports following crops
 
 ## How to run locally 🛠️
 - Before the following steps make sure you have [git](https://git-scm.com/download), [Anaconda](https://www.anaconda.com/) or [miniconda](https://docs.conda.io/en/latest/miniconda.html) installed on your system
-- Clone the complete project with `git clone https://github.com/Gladiator07/Harvestify.git` or you can just download the code and unzip it
+- Clone the complete project with `https://github.com/nagaraju-developer/GrowSmart.git` or you can just download the code and unzip it
 - **Note:** The master branch doesn't have the updated code used for deployment, to download the updated code used for deployment you can use the following command
   ```
-  ❯ git clone -b deploy https://github.com/Gladiator07/Harvestify.git 
+  ❯ git clone https://github.com/nagaraju-developer/GrowSmart.git 
   ```
 - `deploy` branch has only the code required for deploying the app (rest of the code that was used for training the models, data preparation can be accessed on `master` branch)
 - It is highly recommended to clone the deploy branch for running the project locally (the further steps apply only if you have the deploy branch cloned)
 - Once the project is cloned, open anaconda prompt in the directory where the project was cloned and paste the following block
   ```
-  conda create -n harvestify python=3.6.12
-  conda activate harvestify
+  conda create -n GrowSmart python=3.6.12
+  conda activate GrowSmart
   pip install -r requirements.txt
   ```
 - And finally run the project with
